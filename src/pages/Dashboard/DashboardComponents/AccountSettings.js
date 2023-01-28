@@ -10,7 +10,7 @@ const AccountSettings = () => {
     // console.log(user.email)
     // const [userProfile, setUserProfile] = useState([])
     // useEffect(() => {
-    //     fetch(`https://easyscheduler24.herokuapp.com/users/${user?.email}`)
+    //     fetch(`https://easy-schedule.vercel.app/users/${user?.email}`)
     //         .then(res => {
     //             // console.log('res', res);
     //             if (isLoading) {
@@ -23,7 +23,7 @@ const AccountSettings = () => {
     //             setUserProfile(data);
     //         });
     // }, [user?.email, isLoading])
-    const { data: users, isLoading } = useQuery(['users'], () => fetch(`https://easyscheduler24.herokuapp.com/users/${email}`, {
+    const { data: users, isLoading } = useQuery(['users'], () => fetch(`https://easy-schedule.vercel.app/users/${email}`, {
         method: 'GET',
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

@@ -10,7 +10,7 @@ const AllUsers = () => {
     isLoading,
     refetch,
   } = useQuery(["users"], () =>
-    fetch("https://easyscheduler24.herokuapp.com/users", {
+    fetch("https://easy-schedule.vercel.app/users", {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

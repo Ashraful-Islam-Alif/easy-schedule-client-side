@@ -45,7 +45,7 @@ const OneOnOne = () => {
       headers: {
         // authorization
       },
-      url: `https://easyscheduler24.herokuapp.com/event/create/OneOnOne`,
+      url: `https://easy-schedule.vercel.app/event/create/OneOnOne`,
       data: fullData,
     })
       .then((res) => {
